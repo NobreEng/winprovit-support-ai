@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Cache local do wrangler — não é código, muda a cada publicação
+.wrangler/
