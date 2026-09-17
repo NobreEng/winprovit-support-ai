@@ -1,0 +1,14 @@
+{
+  // Configuração de publicação do site na Cloudflare.
+  //
+  // O site é servido como ficheiros estáticos: não há código de servidor,
+  // só a pasta que o `npm run build` produz.
+  //
+  // Não leva "not_found_handling": este site é uma página só, sem rotas do
+  // lado do browser. Um endereço que não exista deve mesmo dar 404, e não
+  // devolver a página inicial a fingir que existe.
+  "name": "winprovit-support-ai",
+  "compatibility_date": "2026-09-16",
+  "observability": { "enabled": true },
+  "assets": { "directory": "dist" }
+}
